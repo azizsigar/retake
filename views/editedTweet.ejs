@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edited Page</title>
+    
+</head>
+<body>
+    <a href="/tweet">go to main menu</a>
+
+    
+
+    <form action="/updateTweet/<%=tweet._id%>" method="post">
+        <h3>Edit a Tweet</h3>
+        <div>
+           
+        <input type="text" name="Name" id="userName"  value=" <%= tweet.Name %> "style="margin-bottom:15px ;">
+    </div>
+        <textarea type="text" name='Message'><%= tweet.Message %></textarea>
+
+       
+        
+        <button type="submit">Submit</button>
+    
+    </form>
+
+
+
+</body>
+</html>

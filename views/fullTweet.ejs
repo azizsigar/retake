@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Twitter</title>
+
+</head>
+
+<body>
+
+    <div id="border">
+        <a href="/tweet">go to main menu</a>
+
+        <div id="commentBorder">
+            <h2 id="name">
+                <%= tweet.Name %>
+            </h2>
+            <h4 id="tweet">
+                <%= tweet.Tweet %>
+            </h4>
+        </div>
+
+
+    </div>
+
+    <form action="/deleteUser/<%=tweet._id%>" method="post">
+
+        <button>Delete</button>
+
+    </form>
+
+    <a href="/editTweet/<%=tweet._id %>"> Edit Post</a>
+
+
+</body>
+
+</html>

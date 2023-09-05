@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/tweet">go to main menu</a>
+
+<div id="form">
+    <form action="/sendTweet" method="post">
+        <h2>Write a something</h2>
+        <div>
+            <h3>Name</h3>
+        <input type="text" name="Name" id="userName"  placeholder="Name">
+        <%   if(err1){ %>
+        <%= err1['Name']%>
+        <%  }%>
+    </div>
+        <textarea type="text" name='Message' rows=9 
+              placeholder="write twit"></textarea>
+              <%  if(err1){%>
+              <%= err1['Message']%>
+              <%  }%>
+        <br>
+        <button type="submit"  >Post a message</button>
+    
+    </form>
+
+</div>
+
+  
+
+</body>
+</html>
